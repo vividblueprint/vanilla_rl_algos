@@ -43,9 +43,7 @@ The replay buffer makes SAC off-policy: transitions from older versions of the
 policy can be reused. For each sampled transition, the critics fit a target
 based on the smaller of two slowly updated target critics:
 
-```text
-target = reward + gamma * (min(target_Q1, target_Q2) - alpha * log_pi(next_action|next_state))
-```
+$target = reward + \gamma * (min(target_{Q1}, target_{Q2}) - \alpha * \log_\pi(next_{action}|next_{state}))$
 
 The minimum helps reduce overestimation. The entropy term rewards policies
 that retain some randomness. The actor minimizes `alpha * log_pi - min(Q1,Q2)`,

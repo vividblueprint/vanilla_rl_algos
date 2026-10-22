@@ -59,7 +59,7 @@ class PPOAgent:
         """Calculate GAE advantages and value targets for one rollout."""
         cfg = self.config
         advantages = np.zeros(len(rewards), dtype=np.float32)
-        gae = 0.0
+        gae = 0.0   # Generalized Advantage Estimation
 
         for index in reversed(range(len(rewards))):
             # A time-limit truncation still bootstraps from V(next_state); a true
