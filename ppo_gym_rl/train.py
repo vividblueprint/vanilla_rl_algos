@@ -6,13 +6,21 @@ import argparse
 import random
 from collections import deque
 from pathlib import Path
+from typing import Callable
+
+import gymnasium as gym
 
 import numpy as np
 import torch
 
-from ppo.agent import PPOAgent
-from ppo.config import DEFAULT_CONFIG, PPOConfig
-from ppo.env import make_env
+try:  # Package import for reuse by other lessons.
+    from .ppo.agent import PPOAgent
+    from .ppo.config import DEFAULT_CONFIG, PPOConfig
+    from .ppo.env import make_env
+except ImportError:  # Direct script execution from the repository root.
+    from ppo.agent import PPOAgent
+    from ppo.config import DEFAULT_CONFIG, PPOConfig
+    from ppo.env import make_env
 
 
 DEFAULT_CHECKPOINT = Path(__file__).parent / "ppo" / "checkpoints" / "cartpole_ppo.pt"
@@ -23,12 +31,13 @@ def train(
     seed: int = DEFAULT_CONFIG.seed,
     save_path: Path = DEFAULT_CHECKPOINT,
     config: PPOConfig = DEFAULT_CONFIG,
+    env_factory: Callable[[], gym.Env] = make_env,
 ) -> None:
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
 
-    env = make_env()
+    env = env_factory()
     agent = PPOAgent(
         state_size=int(env.observation_space.shape[0]),
         action_count=int(env.action_space.n),

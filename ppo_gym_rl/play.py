@@ -6,9 +6,14 @@ import argparse
 import time
 from pathlib import Path
 
-from ppo.agent import PPOAgent
-from ppo.config import DEFAULT_CONFIG
-from ppo.env import make_env
+try:  # Package import when reused by another lesson.
+    from .ppo.agent import PPOAgent
+    from .ppo.config import DEFAULT_CONFIG
+    from .ppo.env import make_env
+except ImportError:  # Direct script execution from the repository root.
+    from ppo.agent import PPOAgent
+    from ppo.config import DEFAULT_CONFIG
+    from ppo.env import make_env
 
 
 DEFAULT_CHECKPOINT = Path(__file__).parent / "ppo" / "checkpoints" / "cartpole_ppo.pt"

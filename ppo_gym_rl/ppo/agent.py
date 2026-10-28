@@ -10,8 +10,8 @@ from torch import nn
 from torch.distributions import Categorical
 from torch.optim import Adam
 
-from ppo.config import PPOConfig
-from ppo.model import ActorCritic
+from .config import PPOConfig
+from .model import ActorCritic
 
 
 class PPOAgent:

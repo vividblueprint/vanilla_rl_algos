@@ -14,6 +14,12 @@ updates, and training loops can be studied directly.
 | [`pg_gym_rl`](pg_gym_rl/README.md) | REINFORCE | CartPole; Monte Carlo policy gradients |
 | [`actor_critic_gym_rl`](actor_critic_gym_rl/README.md) | One-step actor-critic | CartPole; online policy and value updates |
 | [`ppo_gym_rl`](ppo_gym_rl/README.md) | Proximal Policy Optimization (PPO) | CartPole; clipped updates and generalized advantage estimation |
+| [`teacher_student_gym_rl`](teacher_student_gym_rl/README.md) | Policy distillation | CartPole; distills a PPO teacher into a smaller student |
+| [`privileged_learning_gym_rl`](privileged_learning_gym_rl/README.md) | Privileged learning | CartPole; teacher sees full state, student acts from partial observations |
+| [`domain_randomization_gym_rl`](domain_randomization_gym_rl/README.md) | Domain randomization | CartPole; trains PPO across randomized physics and evaluates on nominal physics |
+| [`asymmetric_actor_critic_gym_rl`](asymmetric_actor_critic_gym_rl/README.md) | Asymmetric actor-critic | CartPole; actor uses partial observations, critic uses full state |
+| [`dagger_gym_rl`](dagger_gym_rl/README.md) | DAgger | CartPole; iteratively labels student-visited states with an expert |
+| [`history_policy_gym_rl`](history_policy_gym_rl/README.md) | History-based policy | CartPole; PPO acts on a window of recent partial observations |
 | [`sac_gym_rl`](sac_gym_rl/README.md) | Soft Actor-Critic (SAC) | Pendulum; off-policy continuous control |
 | [`sac_ant_gym_rl`](sac_ant_gym_rl/README.md) | Soft Actor-Critic (SAC) | Ant; quadruped simulation with continuous joint actions |
 
