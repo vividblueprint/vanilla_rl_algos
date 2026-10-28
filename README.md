@@ -20,6 +20,8 @@ updates, and training loops can be studied directly.
 | [`asymmetric_actor_critic_gym_rl`](asymmetric_actor_critic_gym_rl/README.md) | Asymmetric actor-critic | CartPole; actor uses partial observations, critic uses full state |
 | [`dagger_gym_rl`](dagger_gym_rl/README.md) | DAgger | CartPole; iteratively labels student-visited states with an expert |
 | [`history_policy_gym_rl`](history_policy_gym_rl/README.md) | History-based policy | CartPole; PPO acts on a window of recent partial observations |
+| [`recurrent_ppo_gym_rl`](recurrent_ppo_gym_rl/README.md) | Recurrent PPO | CartPole; an LSTM carries policy memory across time steps |
+| [`gru_ppo_gym_rl`](gru_ppo_gym_rl/README.md) | Recurrent PPO | CartPole; a GRU carries policy memory across time steps |
 | [`sac_gym_rl`](sac_gym_rl/README.md) | Soft Actor-Critic (SAC) | Pendulum; off-policy continuous control |
 | [`sac_ant_gym_rl`](sac_ant_gym_rl/README.md) | Soft Actor-Critic (SAC) | Ant; quadruped simulation with continuous joint actions |
 
