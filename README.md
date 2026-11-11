@@ -1,4 +1,39 @@
-# Reinforcement Learning Gym Lab
+<div align="center">
+
+<h1 align="center" >
+
+<img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
+<img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
+<img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
+<b>Reinforcement Learning Gymnasium Lab</b>
+<img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
+<img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
+<img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
+
+</h1>
+
+[![GitHub](https://img.shields.io/badge/GitHub-vividblueprint-181717?logo=github&logoColor=white)](https://github.com/vividblueprint)
+[![Profile Views](https://komarev.com/ghpvc/?username=vividblueprint&label=Profile%20Views&color=blueviolet&style=flat)](https://github.com/vividblueprint)
+[![Issues](https://img.shields.io/github/issues/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/pulls)
+[![Contributors](https://img.shields.io/github/contributors/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/stargazers)
+[![Forks](https://img.shields.io/github/forks/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/forks)
+[![Watchers](https://img.shields.io/github/watchers/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/watchers)
+[![Last Commit](https://img.shields.io/github/last-commit/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/commits)
+[![Monthly Commits](https://img.shields.io/github/commit-activity/m/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/commits)
+[![Languages](https://img.shields.io/github/languages/count/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos)
+[![Code Size](https://img.shields.io/github/languages/code-size/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos)
+[![Repo Size](https://img.shields.io/github/repo-size/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos)
+[![Total Commits](https://img.shields.io/github/commit-activity/t/vividblueprint/vanilla_rl_algos?style=flat&label=Total%20Commits)](https://github.com/vividblueprint/vanilla_rl_algos/commits)
+[![Files](https://img.shields.io/github/directory-file-count/vividblueprint/vanilla_rl_algos?type=file&style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/tree/HEAD)
+[![License](https://img.shields.io/github/license/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/blob/HEAD/LICENSE)
+
+</div>
+
+---
+
+## Introduction
 
 An educational collection of reinforcement learning implementations built with
 PyTorch and Gymnasium. The projects start with small discrete-action tasks and
@@ -20,6 +55,8 @@ updates, and training loops can be studied directly.
 | [`asymmetric_actor_critic_gym_rl`](asymmetric_actor_critic_gym_rl/README.md) | Asymmetric actor-critic | CartPole; actor uses partial observations, critic uses full state |
 | [`dagger_gym_rl`](dagger_gym_rl/README.md) | DAgger | CartPole; iteratively labels student-visited states with an expert |
 | [`history_policy_gym_rl`](history_policy_gym_rl/README.md) | History-based policy | CartPole; PPO acts on a window of recent partial observations |
+| [`recurrent_ppo_gym_rl`](recurrent_ppo_gym_rl/README.md) | Recurrent PPO | CartPole; an LSTM carries policy memory across time steps |
+| [`gru_ppo_gym_rl`](gru_ppo_gym_rl/README.md) | Recurrent PPO | CartPole; a GRU carries policy memory across time steps |
 | [`sac_gym_rl`](sac_gym_rl/README.md) | Soft Actor-Critic (SAC) | Pendulum; off-policy continuous control |
 | [`sac_ant_gym_rl`](sac_ant_gym_rl/README.md) | Soft Actor-Critic (SAC) | Ant; quadruped simulation with continuous joint actions |
 
