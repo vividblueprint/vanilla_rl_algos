@@ -5,7 +5,7 @@
 <img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
 <img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
 <img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
-<b>Reinforcement Learning Gymnasium Lab</b>
+<b>Reinforcement Learning Gymnasium</b>
 <img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
 <img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
 <img width="25px" src="https://em-content.zobj.net/source/microsoft-teams/337/heart-with-ribbon_1f49d.png"/>
@@ -13,7 +13,6 @@
 </h1>
 
 [![GitHub](https://img.shields.io/badge/GitHub-vividblueprint-181717?logo=github&logoColor=white)](https://github.com/vividblueprint)
-[![Profile Views](https://komarev.com/ghpvc/?username=vividblueprint&label=Profile%20Views&color=blueviolet&style=flat)](https://github.com/vividblueprint)
 [![Issues](https://img.shields.io/github/issues/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/pulls)
 [![Contributors](https://img.shields.io/github/contributors/vividblueprint/vanilla_rl_algos?style=flat)](https://github.com/vividblueprint/vanilla_rl_algos/graphs/contributors)
